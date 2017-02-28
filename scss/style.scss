@@ -1,0 +1,57 @@
+$color0: #2A7F41;	// Main Primary color */
+$color1: #9CD1AA;
+$color2: #5AA86F;
+$color3: #0B561F;
+$color4: #002E0C;
+
+
+body {
+    background-color: $color2; 
+    color: $color4;
+    font-family: 'Raleway', sans-serif;
+    #countries {
+        max-height: 95vh;
+        overflow-y: auto;
+    }
+    hr {
+        width: 80%;
+        border-color: $color4;
+    }
+    img.flag {
+        width: 50px;
+    }
+    span.name {
+        margin-left: 20px;
+    }
+    .country {
+        margin: 0;
+    }
+    .countryDetails {
+        table {
+            margin: 0;
+            tr:hover {
+                background-color: $color1;
+            }
+            td {
+                border-color: $color4;
+            }
+            .noborder {
+                border: 0;
+            }
+        }
+    }
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+#map 
+{
+    height: 400px;
+    width: 100%;
+}

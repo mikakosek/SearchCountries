@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wyszukiwarka krajów</title>
+        <link rel="stylesheet" href="https://openlayers.org/en/v4.0.1/css/ol.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center">Wyszukiwarka krajów</h2>
+            <form class="form-inline text-center">
+                <input type="text" class="form-control" id="country-name" placeholder="Poland"/>
+                <button type="button" class="btn btn-default" id="search">Szukaj kraju</button>
+            </form>
+            <hr>
+            <h3>Lista krajów <span id="countCountries" class="badge">0</span></h3>
+            
+            
+            <br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel-group" id="countries" role="tablist" aria-multiselectable="true">
+                                                
+                    </div>                    
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div id="map" class="map"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        
+        </div>
+
+            
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://openlayers.org/en/v4.0.1/build/ol.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
