@@ -15,6 +15,18 @@ $(function() {
         }
     });
         
+    var x = 0;
+
+    $(window).scroll(function() {
+        if (this.pageYOffset >= 205 && $('#countries').height() > $('.panelMap').height()) {
+            $('.panelMap').addClass('fixed');
+        } else {
+            $('.panelMap').removeClass('fixed');            
+        }
+    });
+    
+    
+    
     function searchCountries() {
         var countryName = $('#country-name').val();
         if(!countryName.length) countryName = 'Poland';
@@ -71,9 +83,9 @@ $(function() {
         var zoomL = zoom || 6;
         
         view.animate({
-          duration: 2000,
-                center: ol.proj.fromLonLat([lng, lat]),
-                zoom: zoomL
+            duration: 2000,
+            center: ol.proj.fromLonLat([lng, lat]),
+            zoom: zoomL
         });
             
     }

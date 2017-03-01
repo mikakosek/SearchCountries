@@ -9,10 +9,6 @@ body {
     background-color: $color2; 
     color: $color4;
     font-family: 'Raleway', sans-serif;
-    #countries {
-        max-height: 95vh;
-        overflow-y: auto;
-    }
     hr {
         width: 80%;
         border-color: $color4;
@@ -42,12 +38,9 @@ body {
     }
 }
 
-.absolute {
-    position: absolute;
-}
-
-.relative {
-    position: relative;
+.fixed {
+    position: fixed;
+    top: 5px;
 }
 
 #map 
