@@ -1,0 +1,35 @@
+body {
+  background-color: #5AA86F;
+  color: #002E0C;
+  font-family: 'Raleway', sans-serif;
+  /*    #countries {
+        max-height: 95vh;
+        overflow-y: auto;
+    }*/ }
+  body hr {
+    width: 80%;
+    border-color: #002E0C; }
+  body img.flag {
+    width: 50px; }
+  body span.name {
+    margin-left: 20px; }
+  body .country {
+    margin: 0; }
+  body .countryDetails table {
+    margin: 0; }
+    body .countryDetails table tr:hover {
+      background-color: #9CD1AA; }
+    body .countryDetails table td {
+      border-color: #002E0C; }
+    body .countryDetails table .noborder {
+      border: 0; }
+
+.fixed {
+  position: fixed;
+  top: 5px; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
